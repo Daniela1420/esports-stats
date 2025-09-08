@@ -1,11 +1,31 @@
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .container {
     padding: 10px;
   }
+  .comparison-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 4px;
+  }
   .player-card {
     flex-direction: column;
+    min-width: 90vw;
   }
   .comparison-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+  .p-6 {
+    padding: 0.75rem !important;
+  }
+  .p-4 {
+    padding: 0.5rem !important;
+  }
+  .mb-6 {
+    margin-bottom: 1.2rem !important;
   }
 }
