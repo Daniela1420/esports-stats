@@ -30,6 +30,7 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
       - ./database/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+      - ./database/migrations/002_seed_players.sql:/docker-entrypoint-initdb.d/02_seed_players.sql
     ports:
       - "5432:5432"
 
