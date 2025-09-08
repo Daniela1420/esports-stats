@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .player-card {
+    flex-direction: column;
+  }
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+}
