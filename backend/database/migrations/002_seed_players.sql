@@ -1,1 +1,0 @@
--- Placeholder para datos iniciales (generados por el backend)
