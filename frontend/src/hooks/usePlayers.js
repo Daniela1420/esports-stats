@@ -11,10 +11,9 @@ const usePlayers = (page = 1) => {
     const fetchPlayers = async () => {
       setLoading(true);
       try {
-        const params = { page, ...filters, search: searchTerm };
-        const response = await axios.get(`${process.env.REACT_APP_API_URL}/players`, { params });
-        setPlayers(response.data.players);
-        setTotalPages(response.data.total_pages);
+        const response = await axios.get(`http://localhost:8000/api/v1/players`);
+        setPlayers(response.data);
+        setTotalPages(1);
       } catch (error) {
         console.error('Error fetching players:', error);
       } finally {

@@ -17,7 +17,7 @@ const PlayerList = () => {
       ) : (
         <>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {players.map(player => (
+            {Array.isArray(players) && players.map(player => (
               <div
                 key={player.id}
                 className="player-card bg-white p-4 rounded shadow cursor-pointer hover:bg-gray-100"
